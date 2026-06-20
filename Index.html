@@ -1,11 +1,10 @@
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>MirrorPay • $15 Unlock Fee</title>
+    <title>MirrorPay • Bybit Crypto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -27,83 +26,19 @@
             box-shadow: 0 30px 50px -20px rgba(0,0,0,0.8);
             overflow: hidden;
         }
-        .header {
-            padding: 24px 24px 16px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+        .header { padding: 24px 24px 16px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.06); flex-wrap: wrap; gap: 8px; }
         .logo { display: flex; align-items: center; gap: 12px; }
-        .logo-icon {
-            background: linear-gradient(135deg, #2469F0, #7c3aed);
-            width: 44px; height: 44px; border-radius: 30px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 22px;
-        }
+        .logo-icon { background: linear-gradient(135deg, #2469F0, #7c3aed); width: 44px; height: 44px; border-radius: 30px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
         .logo-text { font-weight: 800; font-size: 20px; color: white; }
-        .badge {
-            background: rgba(36,105,240,0.18);
-            padding: 4px 12px; border-radius: 40px;
-            font-size: 10px; font-weight: 600;
-            color: #8aabff;
-            border: 0.5px solid rgba(36,105,240,0.4);
-        }
+        .badge { background: rgba(36,105,240,0.18); padding: 4px 12px; border-radius: 40px; font-size: 10px; font-weight: 600; color: #8aabff; border: 0.5px solid rgba(36,105,240,0.4); }
         .balance-section { padding: 24px; }
-        .balance-card {
-            background: #131a28;
-            border-radius: 32px;
-            padding: 20px;
-            margin-bottom: 18px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-        .balance-label {
-            font-size: 13px;
-            font-weight: 500;
-            color: #8f9bb3;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .balance-number {
-            font-size: 38px;
-            font-weight: 800;
-            color: white;
-            letter-spacing: -1px;
-        }
+        .balance-card { background: #131a28; border-radius: 32px; padding: 20px; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.05); }
+        .balance-label { font-size: 13px; font-weight: 500; color: #8f9bb3; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .balance-number { font-size: 38px; font-weight: 800; color: white; letter-spacing: -1px; }
         .balance-note { font-size: 11px; color: #6c7a9e; margin-top: 10px; }
-        .real-highlight {
-            background: linear-gradient(120deg, #0f1a2c, #0b1020);
-            border: 1px solid rgba(36,105,240,0.3);
-        }
-        .action-row {
-            display: flex;
-            gap: 10px;
-            padding: 0 24px 20px 24px;
-            flex-wrap: wrap;
-        }
-        .btn {
-            flex: 1;
-            min-width: 70px;
-            background: #1a212f;
-            border: none;
-            padding: 12px 0;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            color: #EFF3FF;
-            cursor: pointer;
-            transition: 0.2s;
-            font-family: 'Inter', sans-serif;
-        }
+        .real-highlight { background: linear-gradient(120deg, #0f1a2c, #0b1020); border: 1px solid rgba(36,105,240,0.3); }
+        .action-row { display: flex; gap: 10px; padding: 0 24px 20px 24px; flex-wrap: wrap; }
+        .btn { flex: 1; min-width: 70px; background: #1a212f; border: none; padding: 12px 0; border-radius: 60px; font-weight: 600; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px; color: #EFF3FF; cursor: pointer; transition: 0.2s; font-family: 'Inter', sans-serif; }
         .btn-primary { background: #2469F0; }
         .btn-primary:active { transform: scale(0.97); background: #1355da; }
         .btn-outline { border: 1px solid #2a3349; background: transparent; }
@@ -111,248 +46,43 @@
         .btn-success:active { transform: scale(0.97); background: #047857; }
         .btn-danger { background: #7a2e2e; color: #ffaaaa; }
         .btn-danger:active { background: #5e2424; }
-        .btn-bybit {
-            background: linear-gradient(135deg, #f7a81b, #f7931a);
-            color: #0c0f16;
-            font-weight: 700;
-        }
+        .btn-bybit { background: linear-gradient(135deg, #f7a81b, #f7931a); color: #0c0f16; font-weight: 700; }
         .btn-bybit:active { transform: scale(0.97); }
-        .panel {
-            background: #0b0e17;
-            margin: 12px 20px 20px 20px;
-            padding: 18px;
-            border-radius: 32px;
-            border: 1px solid #1b2132;
-        }
-        .panel-title {
-            font-weight: 600;
-            color: #cbd5ff;
-            margin-bottom: 16px;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .input-group {
-            background: #111621;
-            border-radius: 40px;
-            padding: 6px 18px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border: 1px solid #262f45;
-            margin-bottom: 14px;
-            flex-wrap: wrap;
-        }
+        .panel { background: #0b0e17; margin: 12px 20px 20px 20px; padding: 18px; border-radius: 32px; border: 1px solid #1b2132; }
+        .panel-title { font-weight: 600; color: #cbd5ff; margin-bottom: 16px; font-size: 15px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .input-group { background: #111621; border-radius: 40px; padding: 6px 18px; display: flex; align-items: center; gap: 12px; border: 1px solid #262f45; margin-bottom: 14px; flex-wrap: wrap; }
         .input-group i { color: #5f6e96; font-size: 18px; }
-        .input-group input, .input-group select {
-            background: transparent;
-            border: none;
-            padding: 14px 0;
-            font-size: 16px;
-            width: 100%;
-            color: white;
-            outline: none;
-            font-family: 'Inter', sans-serif;
-        }
+        .input-group input, .input-group select { background: transparent; border: none; padding: 14px 0; font-size: 16px; width: 100%; color: white; outline: none; font-family: 'Inter', sans-serif; }
         .input-group select { appearance: none; cursor: pointer; }
         .input-group select option { background: #1a212f; color: white; }
         .input-group input::placeholder { color: #3e4a6b; }
-        .demo-send-btn {
-            background: #1f2a48;
-            width: 100%;
-            padding: 14px;
-            border-radius: 44px;
-            border: none;
-            color: white;
-            font-weight: 700;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            cursor: pointer;
-            transition: 0.2s;
-            margin-top: 6px;
-        }
+        .demo-send-btn { background: #1f2a48; width: 100%; padding: 14px; border-radius: 44px; border: none; color: white; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: 0.2s; margin-top: 6px; }
         .demo-send-btn:active { background: #2c3a62; transform: scale(0.98); }
-        .incoming-area {
-            margin-top: 8px;
-            max-height: 300px;
-            overflow-y: auto;
-        }
-        .frozen-card {
-            background: #101522;
-            border-radius: 24px;
-            padding: 14px;
-            margin-bottom: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-left: 4px solid #f0b34b;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+        .incoming-area { margin-top: 8px; max-height: 300px; overflow-y: auto; }
+        .frozen-card { background: #101522; border-radius: 24px; padding: 14px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #f0b34b; flex-wrap: wrap; gap: 8px; }
         .frozen-card .info { flex: 1; min-width: 140px; }
-        .unlock-button {
-            background: linear-gradient(135deg, #f7a81b, #f7931a);
-            border: none;
-            padding: 8px 18px;
-            border-radius: 40px;
-            font-weight: 700;
-            font-size: 13px;
-            cursor: pointer;
-            color: #0c0f16;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-        }
+        .unlock-button { background: linear-gradient(135deg, #f7a81b, #f7931a); border: none; padding: 8px 18px; border-radius: 40px; font-weight: 700; font-size: 13px; cursor: pointer; color: #0c0f16; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
         .unlock-button:active { transform: scale(0.95); }
         .unlocked-card { border-left-color: #34c759; opacity: 0.75; }
-        .history-log {
-            max-height: 220px;
-            overflow-y: auto;
-        }
-        .history-item {
-            padding: 12px;
-            border-bottom: 1px solid #1a1f2e;
-            font-size: 12px;
-            color: #b0bbdb;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        .history-item .crypto-tag {
-            background: rgba(247, 147, 26, 0.15);
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 10px;
-            color: #f7931a;
-            font-weight: 600;
-        }
-        .auth-overlay {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: #0a0c12;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .auth-card {
-            background: #0f121c;
-            border-radius: 48px;
-            padding: 32px;
-            width: 100%;
-            max-width: 400px;
-            border: 1px solid #2469F0;
-        }
-        .auth-card input {
-            background: #111621;
-            border: 1px solid #262f45;
-            padding: 14px 18px;
-            border-radius: 40px;
-            width: 100%;
-            margin-bottom: 12px;
-            color: white;
-            outline: none;
-        }
+        .history-log { max-height: 220px; overflow-y: auto; }
+        .history-item { padding: 12px; border-bottom: 1px solid #1a1f2e; font-size: 12px; color: #b0bbdb; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .auth-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #0a0c12; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .auth-card { background: #0f121c; border-radius: 48px; padding: 32px; width: 100%; max-width: 400px; border: 1px solid #2469F0; }
+        .auth-card input { background: #111621; border: 1px solid #262f45; padding: 14px 18px; border-radius: 40px; width: 100%; margin-bottom: 12px; color: white; outline: none; }
         .auth-card input::placeholder { color: #3e4a6b; }
-        .toast-notification {
-            position: fixed;
-            bottom: 30px;
-            left: 20px;
-            right: 20px;
-            background: #1e293b;
-            color: white;
-            padding: 14px 20px;
-            border-radius: 60px;
-            font-size: 14px;
-            text-align: center;
-            z-index: 1001;
-            animation: slideUp 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-            border-left: 4px solid #2469F0;
-        }
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .legal-note {
-            font-size: 9.5px;
-            text-align: center;
-            padding: 20px;
-            color: #465177;
-            border-top: 1px solid #1a2030;
-            margin-top: 8px;
-        }
-        .status-pill {
-            font-size: 10px;
-            background: #2a2f44;
-            padding: 4px 8px;
-            border-radius: 20px;
-        }
+        .toast-notification { position: fixed; bottom: 30px; left: 20px; right: 20px; background: #1e293b; color: white; padding: 14px 20px; border-radius: 60px; font-size: 14px; text-align: center; z-index: 1001; animation: slideUp 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.4); border-left: 4px solid #2469F0; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .legal-note { font-size: 9.5px; text-align: center; padding: 20px; color: #465177; border-top: 1px solid #1a2030; margin-top: 8px; }
+        .status-pill { font-size: 10px; background: #2a2f44; padding: 4px 8px; border-radius: 20px; }
         .user-email { font-size: 12px; color: #8aabff; }
-        .logout-btn {
-            background: none;
-            border: none;
-            color: #e5484d;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .bybit-badge {
-            background: rgba(247, 147, 26, 0.2);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 10px;
-            color: #f7931a;
-            border: 0.5px solid rgba(247, 147, 26, 0.3);
-        }
-        .crypto-selector {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-            margin-bottom: 14px;
-        }
-        .crypto-option {
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 600;
-            background: #1a212f;
-            color: #8f9bb3;
-            border: 1px solid transparent;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .crypto-option.active {
-            background: rgba(247, 147, 26, 0.2);
-            border-color: #f7931a;
-            color: #f7931a;
-        }
+        .logout-btn { background: none; border: none; color: #e5484d; cursor: pointer; font-size: 14px; }
+        .bybit-badge { background: rgba(247, 147, 26, 0.2); padding: 4px 10px; border-radius: 20px; font-size: 10px; color: #f7931a; border: 0.5px solid rgba(247, 147, 26, 0.3); }
+        .crypto-selector { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+        .crypto-option { padding: 6px 14px; border-radius: 30px; font-size: 12px; font-weight: 600; background: #1a212f; color: #8f9bb3; border: 1px solid transparent; cursor: pointer; transition: 0.2s; }
+        .crypto-option.active { background: rgba(247, 147, 26, 0.2); border-color: #f7931a; color: #f7931a; }
         .crypto-option:hover { border-color: #3a4a6a; }
-        .precision-hint {
-            font-size: 11px;
-            color: #6c7a9e;
-            padding: 4px 12px;
-            background: #0f1420;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        .fee-badge {
-            background: rgba(5, 150, 105, 0.2);
-            color: #34c759;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            border: 0.5px solid rgba(5, 150, 105, 0.3);
-        }
+        .precision-hint { font-size: 11px; color: #6c7a9e; padding: 4px 12px; background: #0f1420; border-radius: 20px; display: inline-block; }
+        .fee-badge { background: rgba(5, 150, 105, 0.2); color: #34c759; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; border: 0.5px solid rgba(5, 150, 105, 0.3); }
         @media (max-width: 480px) {
             .balance-number { font-size: 28px; }
             .action-row .btn { font-size: 11px; padding: 10px 4px; }
@@ -368,92 +98,36 @@
 
 <script>
     // ============================================================
-    //  🔑 YOUR BYBIT API KEYS
-    // ============================================================
+    //  MIRRORPAY • CRYPTO EDITION WITH BYBIT
+    //  ============================================================
     const BYBIT_CONFIG = {
         apiKey: "S7apQNYTZUtrh9BWSp",
         secretKey: "ORPkFqwBsNAP05hvwUXRh8UIC9j1fOvnH4Ri",
         testnet: false,
         network: "TRC20"
     };
-    // ============================================================
-
-    // 💰 UNLOCK FEE - REDUCED TO $15
     const UNLOCK_FEE = 15;
 
     const CRYPTO_CONFIG = {
-        BTC: { symbol: '₿', name: 'Bitcoin', decimal: 8, price: 85000, minSend: 0.00001 },
-        ETH: { symbol: 'Ξ', name: 'Ethereum', decimal: 18, price: 3200, minSend: 0.0001 },
-        USDT: { symbol: '₮', name: 'Tether (TRC20)', decimal: 2, price: 1.00, minSend: 1 },
-        SOL: { symbol: '◎', name: 'Solana', decimal: 9, price: 180, minSend: 0.001 },
-        LTC: { symbol: 'Ł', name: 'Litecoin', decimal: 8, price: 85, minSend: 0.001 },
-        DOGE: { symbol: 'Ð', name: 'Dogecoin', decimal: 8, price: 0.12, minSend: 1 }
+        BTC: { symbol: '₿', name: 'Bitcoin', decimal: 8, price: 85000 },
+        ETH: { symbol: 'Ξ', name: 'Ethereum', decimal: 18, price: 3200 },
+        USDT: { symbol: '₮', name: 'Tether', decimal: 2, price: 1 },
+        SOL: { symbol: '◎', name: 'Solana', decimal: 9, price: 180 },
+        LTC: { symbol: 'Ł', name: 'Litecoin', decimal: 8, price: 85 },
+        DOGE: { symbol: 'Ð', name: 'Dogecoin', decimal: 8, price: 0.12 }
     };
-
     const CRYPTO_LIST = Object.keys(CRYPTO_CONFIG);
 
-    let appData = {
-        users: {},
-        currentUser: null
-    };
-
+    let appData = { users: {}, currentUser: null };
     let selectedCrypto = 'USDT';
 
-    // ---------- BYBIT API CALLS ----------
-    async function bybitAPI(endpoint, params = {}) {
-        console.log(`🚀 Bybit API Call: ${endpoint}`, params);
-        
-        if (endpoint === 'create-payment') {
-            return {
-                success: true,
-                paymentId: 'pay_' + Date.now() + '_' + Math.random().toString(36).substring(2, 8),
-                address: '0x' + Array.from({length: 40}, () => Math.floor(Math.random() * 16).toString(16)).join(''),
-                network: BYBIT_CONFIG.network,
-                amount: UNLOCK_FEE,
-                currency: 'USDT'
-            };
-        }
-        
-        if (endpoint === 'check-payment') {
-            return {
-                success: true,
-                status: Math.random() > 0.3 ? 'pending' : 'confirmed',
-                amount: params.amount || UNLOCK_FEE,
-                currency: 'USDT',
-                txId: '0x' + Array.from({length: 64}, () => Math.floor(Math.random() * 16).toString(16)).join('')
-            };
-        }
-        
-        if (endpoint === 'withdraw') {
-            return {
-                success: true,
-                withdrawalId: 'wd_' + Date.now(),
-                amount: params.amount,
-                status: 'processing'
-            };
-        }
-        
-        return { success: false, error: 'Unknown endpoint' };
-    }
-
-    // ---------- HELPERS ----------
     function loadData() {
-        const saved = localStorage.getItem('mirrorpay_bybit_15');
+        const saved = localStorage.getItem('mirrorpay_crypto');
         if (saved) {
-            try {
-                const parsed = JSON.parse(saved);
-                appData.users = parsed.users || {};
-                appData.currentUser = parsed.currentUser || null;
-            } catch(e) {}
+            try { const parsed = JSON.parse(saved); appData.users = parsed.users || {}; appData.currentUser = parsed.currentUser || null; } catch(e) {}
         }
     }
-
-    function saveData() {
-        localStorage.setItem('mirrorpay_bybit_15', JSON.stringify({
-            users: appData.users,
-            currentUser: appData.currentUser
-        }));
-    }
+    function saveData() { localStorage.setItem('mirrorpay_crypto', JSON.stringify({ users: appData.users, currentUser: appData.currentUser })); }
 
     function getCurrentUserData() {
         if (!appData.currentUser || !appData.users[appData.currentUser]) return null;
@@ -466,111 +140,181 @@
         saveData();
     }
 
-    function showToast(message, isError = false) {
+    function showToast(msg, isErr = false) {
         const existing = document.querySelector('.toast-notification');
         if (existing) existing.remove();
         const toast = document.createElement('div');
         toast.className = 'toast-notification';
-        toast.style.borderLeftColor = isError ? '#e5484d' : '#2469F0';
-        toast.innerHTML = `<i class="fas ${isError ? 'fa-exclamation-triangle' : 'fa-check-circle'}"></i> ${message}`;
+        toast.style.borderLeftColor = isErr ? '#e5484d' : '#2469F0';
+        toast.innerHTML = `<i class="fas ${isErr ? 'fa-exclamation-triangle' : 'fa-check-circle'}"></i> ${msg}`;
         document.body.appendChild(toast);
         setTimeout(() => { if (toast.parentNode) toast.remove(); }, 4000);
     }
 
-    function addActivity(text, type = 'info') {
-        const user = getCurrentUserData();
-        if (!user) return;
-        const entry = {
-            text: text,
-            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
-            type: type
-        };
-        user.activityFeed = [entry, ...(user.activityFeed || [])].slice(0, 40);
-        saveData();
-        renderUI();
-    }
-
     function getDisplayName(email) {
         const user = appData.users[email];
-        if (user && user.displayName && user.displayName.trim() !== '') {
-            return user.displayName.trim();
-        }
+        if (user && user.displayName && user.displayName.trim() !== '') return user.displayName.trim();
         return email.split('@')[0];
     }
 
-    function getCoinPrice(coin) {
-        return CRYPTO_CONFIG[coin]?.price || 0;
-    }
+    function getCoinPrice(coin) { return CRYPTO_CONFIG[coin]?.price || 0; }
+    function getCoinDecimal(coin) { return CRYPTO_CONFIG[coin]?.decimal || 8; }
 
-    function getCoinDecimal(coin) {
-        return CRYPTO_CONFIG[coin]?.decimal || 8;
-    }
-
-    // ---------- AUTH ----------
-    function login(email, password) {
-        if (!email || !password) { showToast('Please enter email and password', true); return false; }
+    function login() {
+        const email = document.getElementById('loginEmail')?.value.trim();
+        const password = document.getElementById('loginPassword')?.value.trim();
+        if (!email || !password) { showToast('Enter email & password', true); return; }
         const user = appData.users[email];
-        if (!user) { showToast('Account not found. Please sign up first.', true); return false; }
-        if (user.password !== password) { showToast('Incorrect password', true); return false; }
+        if (!user) { showToast('Account not found. Sign up first.', true); return; }
+        if (user.password !== password) { showToast('Incorrect password', true); return; }
         appData.currentUser = email;
         saveData();
         renderUI();
-        showToast(`Welcome back, ${getDisplayName(email)}!`);
-        return true;
+        showToast(`Welcome ${getDisplayName(email)}!`);
     }
 
-    function signup(email, password) {
-        if (!email || !password) { showToast('Please enter email and password', true); return false; }
-        if (password.length < 6) { showToast('Password must be at least 6 characters', true); return false; }
-        if (appData.users[email]) { showToast('An account with this email already exists', true); return false; }
-
+    function signup() {
+        const email = document.getElementById('loginEmail')?.value.trim();
+        const password = document.getElementById('loginPassword')?.value.trim();
+        if (!email || !password) { showToast('Enter email & password', true); return; }
+        if (password.length < 6) { showToast('Password min 6 chars', true); return; }
+        if (appData.users[email]) { showToast('Account already exists', true); return; }
         appData.users[email] = {
             password: password,
             displayName: '',
-            demoBalance: 1000000.00,
-            realBalance: 0.00,
+            demoBalance: 1000000,
+            realBalance: 0,
             frozenTransactions: [],
-            bybitWallet: null,
             activityFeed: [{ text: '🎉 Welcome! You have $1,000,000 demo money.', time: new Date().toLocaleTimeString() }]
         };
-
         appData.currentUser = email;
         saveData();
         renderUI();
-        showToast(`✅ Account created! You have $1,000,000 demo money.`);
-        return true;
+        showToast('✅ Account created! $1,000,000 demo money.');
     }
 
-    function logout() {
-        appData.currentUser = null;
-        saveData();
-        renderUI();
-        showToast('Logged out');
-    }
+    function logout() { appData.currentUser = null; saveData(); renderUI(); showToast('Logged out'); }
 
-    // ---------- PROFILE ----------
-    function updateDisplayName(name) {
-        if (!name || name.trim() === '') { showToast('Please enter a name', true); return false; }
-        updateCurrentUser({ displayName: name.trim() });
-        showToast(`✅ Name updated to: ${name.trim()}`);
-        renderUI();
-        return true;
-    }
-
-    // ---------- SEND DEMO ----------
-    function sendDemo(recipientEmail, amount, crypto) {
+    function sendDemo() {
         const sender = getCurrentUserData();
-        if (!sender) { showToast('Please log in first', true); return false; }
-        if (!recipientEmail || recipientEmail.trim() === '') { showToast('Enter recipient email', true); return false; }
-        if (isNaN(amount) || amount <= 0) { showToast('Enter a valid amount', true); return false; }
-        if (amount > sender.demoBalance) { showToast(`Insufficient demo balance: $${sender.demoBalance.toFixed(2)}`, true); return false; }
-        if (recipientEmail === appData.currentUser) { showToast('Cannot send to yourself', true); return false; }
-
+        if (!sender) { showToast('Please log in', true); return; }
+        const recipientEmail = document.getElementById('recipientEmail')?.value.trim();
+        const amount = parseFloat(document.getElementById('sendAmount')?.value);
+        if (!recipientEmail) { showToast('Enter recipient email', true); return; }
+        if (isNaN(amount) || amount <= 0) { showToast('Enter valid amount', true); return; }
+        if (amount > sender.demoBalance) { showToast(`Insufficient demo balance: $${sender.demoBalance}`, true); return; }
+        if (recipientEmail === appData.currentUser) { showToast('Cannot send to yourself', true); return; }
         const recipient = appData.users[recipientEmail];
-        if (!recipient) { showToast('Recipient not found. They need to create an account.', true); return false; }
+        if (!recipient) { showToast('Recipient not found', true); return; }
 
         sender.demoBalance -= amount;
+        const price = getCoinPrice(selectedCrypto);
+        const decimal = getCoinDecimal(selectedCrypto);
+        const cryptoAmount = amount / price;
+        const formattedCrypto = cryptoAmount.toFixed(decimal);
+        const senderName = getDisplayName(appData.currentUser);
+        const frozenTx = {
+            id: Date.now() + '-' + Math.random().toString(36).substring(2, 8),
+            fromEmail: appData.currentUser,
+            fromName: senderName,
+            amount: amount,
+            crypto: selectedCrypto,
+            cryptoAmount: parseFloat(formattedCrypto),
+            price: price,
+            unlocked: false,
+            unlockFee: UNLOCK_FEE,
+            createdAt: new Date().toISOString()
+        };
+        recipient.frozenTransactions = [frozenTx, ...(recipient.frozenTransactions || [])];
+        saveData();
+        renderUI();
+        showToast(`✅ $${amount} (${formattedCrypto} ${selectedCrypto}) demo sent! Recipient pays $${UNLOCK_FEE} to unlock.`);
+    }
 
-        const price = getCoinPrice(crypto);
-        const decimal = getCoinDecimal(crypto);
-        const 
+    function unlockFrozen(frozenId) {
+        const user = getCurrentUserData();
+        if (!user) return;
+        const idx = (user.frozenTransactions || []).findIndex(f => f.id === frozenId);
+        if (idx === -1) { showToast('Transaction not found', true); return; }
+        const frozen = user.frozenTransactions[idx];
+        if (frozen.unlocked) { showToast('Already unlocked', true); return; }
+
+        const confirmUnlock = confirm(
+            `💸 UNLOCK $${frozen.amount.toFixed(2)} → REAL BALANCE\n\n` +
+            `From: ${frozen.fromName}\n` +
+            `Amount: ${frozen.cryptoAmount.toFixed(getCoinDecimal(frozen.crypto))} ${frozen.crypto}\n\n` +
+            `You pay $${UNLOCK_FEE} USDT (simulated) to unlock these funds.\n\n` +
+            `✅ After payment, $${frozen.amount.toFixed(2)} added to your REAL balance.`
+        );
+        if (!confirmUnlock) return;
+
+        frozen.unlocked = true;
+        user.frozenTransactions[idx] = frozen;
+        user.realBalance = (user.realBalance || 0) + frozen.amount;
+        saveData();
+        renderUI();
+        showToast(`✅ $${frozen.amount.toFixed(2)} converted to REAL money!`);
+    }
+
+    function withdrawReal() {
+        const user = getCurrentUserData();
+        if (!user) return;
+        if (user.realBalance <= 0.01) { showToast('No real balance to withdraw', true); return; }
+        const amount = user.realBalance;
+        const fee = 1.00;
+        const net = amount - fee;
+        const confirmWithdraw = confirm(`Withdraw $${amount.toFixed(2)} real to bank?\nFee: $${fee}\nNet: $${net.toFixed(2)}`);
+        if (!confirmWithdraw) return;
+        user.realBalance = 0;
+        saveData();
+        renderUI();
+        showToast(`🏁 Withdrawal initiated! $${net.toFixed(2)} sent.`);
+    }
+
+    function resetApp() {
+        if (confirm('⚠️ Reset all data?')) {
+            appData.users = {};
+            appData.currentUser = null;
+            saveData();
+            renderUI();
+            showToast('App reset.');
+        }
+    }
+
+    function updateDisplayName() {
+        const name = document.getElementById('displayNameInput')?.value.trim();
+        if (!name) { showToast('Enter a name', true); return; }
+        updateCurrentUser({ displayName: name });
+        showToast(`✅ Name updated: ${name}`);
+        renderUI();
+    }
+
+    function renderUI() {
+        const root = document.getElementById('mirrorPayRoot');
+
+        if (!appData.currentUser || !appData.users[appData.currentUser]) {
+            root.innerHTML = `
+                <div class="auth-overlay">
+                    <div class="auth-card">
+                        <div style="text-align:center; margin-bottom:24px;">
+                            <div style="background:linear-gradient(135deg, #2469F0, #7c3aed); width:60px; height:60px; border-radius:30px; display:flex; align-items:center; justify-content:center; font-size:28px; margin:0 auto 16px; box-shadow: 0 8px 18px rgba(36,105,240,0.3);">
+                                <i class="fas fa-bitcoin" style="color:white;"></i>
+                            </div>
+                            <h2 style="color:white;">MirrorPay</h2>
+                            <p style="color:#8f9bb3; font-size:13px;">Recipient Pays $${UNLOCK_FEE} to Unlock</p>
+                            <p style="color:#34c759; font-size:11px; margin-top:4px;">✅ Bybit API Connected</p>
+                        </div>
+                        <input type="email" id="loginEmail" placeholder="Email">
+                        <input type="password" id="loginPassword" placeholder="Password">
+                        <button class="btn btn-primary" id="loginBtn" style="margin-bottom:12px;">Sign In</button>
+                        <button class="btn btn-outline" id="signupBtn">Create Account (free $1,000,000)</button>
+                        <div style="margin-top:20px; font-size:11px; color:#5f6c8a; text-align:center; border-top:1px solid #1a1f2e; padding-top:16px;">
+                            <i class="fas fa-check-circle" style="color:#34c759;"></i> Bybit API configured<br>
+                            Recipient pays $${UNLOCK_FEE} USDT to unlock real money
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('loginBtn')?.addEventListener('click', login);
+            document.getElementById('signupBtn')?.addEventListener('click', signup);
+            document.getElementById('log
